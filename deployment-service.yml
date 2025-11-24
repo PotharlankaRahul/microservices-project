@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: rahul11395277/emailservice:latest
+        image: rahul113952/emailservice:latest
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rahul11395277/checkoutservice:latest
+          image: rahul113952/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rahul11395277/recommendationservice:latest
+        image: rahul113952/recommendationservice:latest
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -200,7 +200,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: rahul11395277/frontend:latest
+          image: rahul113952/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -297,7 +297,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rahul11395277/paymentservice:latest
+        image: rahul113952/paymentservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -349,7 +349,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rahul11395277/productcatalogservice:latest
+        image: rahul113952/productcatalogservice:latest
         ports:
         - containerPort: 3550
         env:
@@ -401,7 +401,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rahul11395277/cartservice:latest
+        image: rahul113952/cartservice:latest
         ports:
         - containerPort: 7070
         env:
@@ -465,7 +465,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: rahul11395277/loadgenerator:latest
+        image: rahul113952/loadgenerator:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -548,7 +548,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: rahul11395277/shippingservice:latest
+        image: rahul113952/shippingservice:latest
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: rahul11395277/adservice:latest
+        image: rahul113952/adservice:latest
         ports:
         - containerPort: 9555
         env:
